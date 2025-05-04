@@ -1,0 +1,12 @@
+<section id="apropos" style="margin-top:50px;">
+    <h2>À propos</h2>
+    <p>
+        Je m'appelle Hamed Sylla et je suis étudiant en BUT MMI, passionné par le développement web. 
+        Je me spécialise dans le <strong>front-end</strong>, avec des compétences en HTML, CSS et JavaScript. 
+        Mon objectif est de créer des interfaces modernes, claires et fonctionnelles qui offrent une expérience utilisateur de qualité.
+    </p>
+    <p>
+        Je suis en apprentissage constant et j’aime relever de nouveaux défis pour améliorer mes compétences techniques. 
+        Mon portfolio présente quelques projets personnels que j’ai réalisés pour mettre en pratique mes connaissances.
+    </p>
+</section>
