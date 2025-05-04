@@ -5,46 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamed Sylla - Développeur Front-end</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; color: #333; }
-        h1 { color: #2c3e50; }
-        nav a { margin-right: 20px; text-decoration: none; color: #2980b9; }
-        section { margin-top: 40px; }
-        .btn { display: inline-block; padding: 10px 20px; background-color: #2980b9; color: white; text-decoration: none; border-radius: 5px; }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section {
+            margin-top: 50px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Hamed Sylla - Développeur Front-end</h1>
-    
-    <nav>
-        <a href="#apropos">À propos</a>
-        <a href="#projets">Projets</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
-    <section id="apropos">
-        <h2>À propos</h2>
-        <p>Je suis étudiant en BUT MMI, passionné par le développement web front-end. Je crée des sites modernes et fonctionnels, et je développe mes compétences en HTML, CSS et JavaScript. Mon objectif : devenir développeur front-end professionnel.</p>
-    </section>
+    <!-- ======= HEADER ======= -->
+    <header>
+        <h1>Hamed Sylla - Développeur Front-end</h1>
+        <nav>
+            <a href="#apropos">À propos</a>
+            <a href="#projets">Projets</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <section id="projets">
-        <h2>Mes projets</h2>
-        <ul>
-            <li><a href="https://tonprojet1.github.io" target="_blank">Projet 1 : Mini site HTML/CSS</a></li>
-            <li><a href="https://tonprojet2.github.io" target="_blank">Projet 2 : Application météo (JavaScript)</a></li>
-            <li><a href="https://github.com/syllaah" target="_blank">Voir tous mes projets sur GitHub</a></li>
-        </ul>
-    </section>
+    <main>
 
-    <section id="cv">
-        <h2>Mon CV</h2>
-        <a href="CV_Hamed_Sylla.pdf" class="btn" download>Télécharger mon CV</a>
-    </section>
+        <!-- ======= ACCUEIL ======= -->
+        <section id="accueil">
+            <h2>Bienvenue</h2>
+            <p>Je suis Hamed Sylla, étudiant en BUT MMI et développeur front-end passionné. Mon objectif : créer des interfaces modernes, fonctionnelles et adaptées aux utilisateurs.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter par email : <a href="mailto:hamed.sylla@example.com">hamed.sylla@example.com</a></p>
-    </section>
+        <!-- ======= À PROPOS ======= -->
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>
+                Je m'appelle Hamed Sylla et je suis étudiant en BUT MMI. Je me spécialise dans le développement front-end avec des compétences en HTML, CSS et JavaScript.
+            </p>
+            <p>
+                Je suis motivé par l’envie de développer des interfaces web claires et efficaces. Je suis en apprentissage constant pour améliorer mes compétences techniques et suivre l'évolution du web.
+            </p>
+        </section>
+
+        <!-- ======= PROJETS ======= -->
+        <section id="projets">
+            <h2>Mes projets</h2>
+            <ul>
+                <li><a href="https://tonprojet1.github.io" target="_blank">Projet 1 : Mini site HTML/CSS</a> - Création d'une page responsive avec HTML et CSS.</li>
+                <li><a href="https://tonprojet2.github.io" target="_blank">Projet 2 : Application météo (JavaScript)</a> - Utilisation d'une API pour afficher la météo.</li>
+                <li><a href="https://github.com/syllaah" target="_blank">Voir tous mes projets sur GitHub</a></li>
+            </ul>
+        </section>
+
+        <!-- ======= CV ======= -->
+        <section id="cv">
+            <h2>Mon CV</h2>
+            <a href="CV_Hamed_Sylla.pdf" class="btn" download>Télécharger mon CV</a>
+        </section>
+
+        <!-- ======= CONTACT ======= -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter par email : 
+                <a href="mailto:hamed.sylla@example.com">hamed.sylla@example.com</a>
+            </p>
+            <p>Ou via mon <a href="https://www.linkedin.com/in/tonlinkedin" target="_blank">LinkedIn</a>.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hamed Sylla. Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>
 
